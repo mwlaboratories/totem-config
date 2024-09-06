@@ -36,10 +36,10 @@
 
         symbolLayer {
             bindings = <
-                             &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp HASH     &trans  &trans  &trans  &trans  &trans
-                             &kp EXCLAMATION   &kp KP_MINUS   &kp KP_PLUS       &kp KP_EQUAL       &kp AT       &trans  &trans  &trans  &trans  &trans
-&mt LEFT_BRACKET LEFT_BRACE  &kp CARET         &kp KP_DIVIDE  &kp ASTRK         &kp BACKSLASH      &kp UNDER    &trans  &trans  &trans  &trans  &trans  &mt RIGHT_BRACKET RIGHT_BRACE
-                                                              &trans            &trans             &trans       &trans  &trans  &trans
+                             &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp HASH     &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+                             &kp EXCLAMATION   &kp KP_MINUS   &kp KP_PLUS       &kp KP_EQUAL       &kp AT       &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
+&mt LEFT_BRACKET LEFT_BRACE  &kp CARET         &kp KP_DIVIDE  &kp ASTRK         &kp BACKSLASH      &kp UNDER    &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_WIN  &mt RIGHT_BRACKET RIGHT_BRACE
+                                                              &trans            &trans             &trans       &trans         &trans         &trans
             >;
         };
 
