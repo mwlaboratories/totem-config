@@ -16,10 +16,10 @@
 
         baseLayer {
             bindings = <
-                                 &kp Q  &kp W  &kp E       &kp R      &kp T        &kp Y        &kp U             &kp I          &kp O       &kp P
-                                 &kp A  &kp S  &kp D       &kp F      &kp G        &kp H        &kp J             &kp K          &kp L       &kp SEMICOLON
-&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z  &kp X  &kp C       &kp V      &kp B        &kp N        &kp M             &kp COMMA      &kp PERIOD  &kp SLASH      &mt LEFT_CONTROL RIGHT_PARENTHESIS
-                                               &kp DELETE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &mt LEFT_ALT ESC  &kp BACKSPACE
+                                 &kp Q  &kp W  &kp E       &kp R        &kp T        &kp Y        &kp U             &kp I          &kp O       &kp P
+                                 &kp A  &kp S  &kp D       &kp F        &kp G        &kp H        &kp J             &kp K          &kp L       &kp SEMICOLON
+&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z  &kp X  &kp C       &kp V        &kp B        &kp N        &kp M             &kp COMMA      &kp PERIOD  &kp SLASH      &mt LEFT_CONTROL RIGHT_PARENTHESIS
+                                               &kp DELETE  &lt 3 SPACE  &lt 1 TAB    &lt 2 ENTER  &mt LEFT_ALT ESC  &kp BACKSPACE
             >;
 
             label = "BASE";
@@ -36,10 +36,19 @@
 
         symbolLayer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                             &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp HASH     &trans  &trans  &trans  &trans  &trans
+                             &kp EXCLAMATION   &kp KP_MINUS   &kp KP_PLUS       &kp KP_EQUAL       &kp AT       &trans  &trans  &trans  &trans  &trans
+&mt LEFT_BRACKET LEFT_BRACE  &kp CARET         &kp KP_DIVIDE  &kp ASTRK         &kp BACKSLASH      &kp UNDER    &trans  &trans  &trans  &trans  &trans  &mt RIGHT_BRACKET RIGHT_BRACE
+                                                              &trans            &trans             &trans       &trans  &trans  &trans
+            >;
+        };
+
+        movementLayer {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS  &kp C_PIP          &kp C_PP         &kp C_NEXT  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &trans  &trans
+                        &trans  &trans  &trans    &trans          &trans             &trans
             >;
         };
     };
