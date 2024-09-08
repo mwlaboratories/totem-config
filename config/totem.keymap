@@ -5,7 +5,7 @@
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
-    flavor = "tap-preferred";
+    flavor = "tap-unless-interrupted";
     tapping-term-ms = <170>;
 };
 
