@@ -46,18 +46,18 @@
 
         movementLayer {
             bindings = <
-             &sys_reset  &bootloader  &bt BT_CLR  &trans  &trans    &kp C_PREVIOUS  &kp C_PIP          &kp C_PP         &kp C_NEXT  &trans
-             &trans      &trans       &trans      &trans  &trans    &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &trans
-&bootloader  &trans      &trans       &trans      &trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &trans  &trans
-                                      &trans      &trans  &trans    &trans          &trans             &trans
+             &trans  &trans  &bt BT_CLR  &trans  &trans    &kp C_PREVIOUS  &kp C_PIP          &kp C_PP         &kp C_NEXT  &trans
+             &trans  &trans  &trans      &trans  &trans    &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &trans
+&bootloader  &trans  &trans  &trans      &trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &trans  &bootloader
+                             &trans      &trans  &trans    &trans          &trans             &trans
             >;
         };
 
         rightResetLayer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &bootloader  &sys_reset
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans       &trans      &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
