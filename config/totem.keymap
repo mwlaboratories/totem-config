@@ -17,10 +17,10 @@
 
         baseLayer {
             bindings = <
-                                 &kp Q  &kp W  &kp E           &kp R      &kp T        &kp Y        &kp U          &kp I                &kp O       &kp P
-                                 &kp A  &kp S  &kp D           &kp F      &kp G        &kp H        &kp J          &kp K                &kp L       &kp SEMICOLON
-&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z  &kp X  &kp C           &kp V      &kp B        &kp N        &kp M          &kp COMMA            &kp PERIOD  &kp SLASH      &mt LEFT_CONTROL RIGHT_PARENTHESIS
-                                               &mt DELETE TAB  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_ALT ESCAPE
+                                 &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y        &kp U          &kp I                &kp O       &kp P
+                                 &kp A  &kp S  &kp D         &kp F      &kp G        &kp H        &kp J          &kp K                &kp L       &kp SEMICOLON
+&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp Z  &kp X  &kp C         &kp V      &lt 3 B      &kp N        &kp M          &kp COMMA            &kp PERIOD  &kp SLASH      &mt LEFT_CONTROL RIGHT_PARENTHESIS
+                                               &lt 3 DELETE  &kp SPACE  &lt 1 TAB    &lt 2 ENTER  &kp BACKSPACE  &mt LEFT_ALT ESCAPE
             >;
 
             label = "BASE";
@@ -46,10 +46,10 @@
 
         movementLayer {
             bindings = <
-             &trans  &trans  &bt BT_CLR  &trans  &trans    &kp C_PREVIOUS  &kp C_PIP          &kp C_PP         &kp C_NEXT  &trans
-             &trans  &trans  &trans      &trans  &trans    &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &trans
-&bootloader  &trans  &trans  &trans      &trans  &trans    &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &trans  &bootloader
-                             &trans      &trans  &trans    &trans          &trans             &trans
+             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREVIOUS  &kp C_PIP          &kp C_PP         &kp C_NEXT  &trans
+             &trans        &trans        &trans        &trans        &trans          &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &trans
+&bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR      &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans      &trans  &bootloader
+                                         &trans        &trans        &trans          &trans          &trans             &trans
             >;
         };
     };
