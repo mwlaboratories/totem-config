@@ -6,7 +6,7 @@
     quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <500>;
+    tapping-term-ms = <350>;
 };
 
 / {
